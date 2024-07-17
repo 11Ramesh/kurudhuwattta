@@ -1,0 +1,25 @@
+<!-- login.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+</head>
+<body  class="body1">
+  <h1>Wellcome !!!!<br>Our Store</h1>
+ 
+    {% block loginForm %}
+
+
+
+    {% endblock %}
+
+
+    <input type="button" name="register" value="Register" onclick="window.location.href='{% url 'register_view' %}'">
+
+ 
+</body>
+</html>
